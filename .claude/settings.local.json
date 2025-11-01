@@ -1,0 +1,40 @@
+{
+  "projectContext": "solidworks-distributed-system - Autonomous Operations Platform",
+  "preferredStyle": {
+    "language": "TypeScript",
+    "typeMode": "strict",
+    "commitMessage": "conventional",
+    "documentation": "JSDoc",
+    "testing": "Vitest"
+  },
+  "documentation": {
+    "systemRequirements": "../../docs/システム要件定義書_v2.1_マスターモード維持版.md",
+    "taskManagement": "../../docs/完全タスク管理ドキュメント_v2.0_ハイブリッドノード版.md",
+    "issueTemplate": "../../docs/Miyabi用ISSUE記述テンプレート_詳細版.md"
+  },
+  "agents": {
+    "coordinator": "agents/coordinator/coordinator-agent.ts",
+    "codegen": "agents/codegen/codegen-agent.ts",
+    "review": "agents/review/review-agent.ts",
+    "issue": "agents/issue/issue-agent.ts",
+    "pr": "agents/pr/pr-agent.ts",
+    "deployment": "agents/deployment/deployment-agent.ts"
+  },
+  "qualityThreshold": {
+    "minScore": 80,
+    "testCoverage": 80,
+    "typeScriptErrors": 0,
+    "eslintErrors": 0
+  },
+  "shikigaku": {
+    "principles": [
+      "責任と権限の明確化",
+      "結果重視",
+      "階層の明確化",
+      "誤解・錯覚の排除",
+      "感情的判断の排除"
+    ],
+    "labels": 65,
+    "hierarchy": "Human → Coordinator → Specialist"
+  }
+}
